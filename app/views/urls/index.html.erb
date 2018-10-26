@@ -1,3 +1,24 @@
 <% @urls.each do |url| %>
-  <%= url.url %>
+  <h1><%= url.url %></h1>
+
+  <strong>質問</strong>(<%= url.questions.count %>)
+  <% url.questions.each do |questions| %>
+    <div>
+      <%= simple_format( question.content ) %>
+      <%= question.yes %> 
+      <%= question.no %>
+      <%= link_to '削除', [question.url, question],
+                  :confirm => 'よろしいですか？',
+                  :method => :delete %>
+
+    </div>
+  <% end %>
+
+  <strong>質問を追加</strong>
+  <%= form_for([url, url.questions.build]) do |f| %>
+
+      <%= f.text_area :content, placeholder: '質問を入力してください' %>
+      <%= f.submit '追加する' %>
+  <% end %>
+    
 <% end %>

@@ -1968,3 +1968,1976 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddUrlIdToQuestions (20181024020840)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "questions" ADD "url_id" integer[0m
+  ↳ db/migrate/20181024020840_add_url_id_to_questions.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddUrlIdToQuestions (20181024020840)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "question" ADD "url_id" integer[0m
+  ↳ db/migrate/20181024020840_add_url_id_to_questions.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddUrlIdToQuestions (20181024020840)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "questions" ADD "url_id" integer[0m
+  ↳ db/migrate/20181024020840_add_url_id_to_questions.rb:3
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-10-24 13:38:29 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 1532ms (Views: 1517.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-24 13:38:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-24 13:38:48 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `questions' for nil:NilClass):
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>
+    5:   <% @url.questions.each do |question| %>
+    6:     <div>
+    7:       <%= simple_format( question.question ) %>
+    8:       <%= question.question %>
+  
+app/views/urls/index.html.erb:5:in `block in _app_views_urls_index_html_erb__184419688513607413_70202348472900'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb__184419688513607413_70202348472900'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-24 13:39:50 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `question' for nil:NilClass):
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>
+    5:   <% @url.question.each do |question| %>
+    6:     <div>
+    7:       <%= simple_format( question.question ) %>
+    8:       <%= question.question %>
+  
+app/views/urls/index.html.erb:5:in `block in _app_views_urls_index_html_erb__184419688513607413_70202464648640'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb__184419688513607413_70202464648640'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-24 13:40:59 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `questions' for nil:NilClass):
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>
+    5:   <% @url.questions.each do |question| %>
+    6:     <div>
+    7:       <%= simple_format( question.question ) %>
+    8:       <%= question.question %>
+  
+app/views/urls/index.html.erb:5:in `block in _app_views_urls_index_html_erb__184419688513607413_70202347858020'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb__184419688513607413_70202347858020'
+Started GET "/" for 127.0.0.1 at 2018-10-25 16:41:03 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 307ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/nuts/ToiDAS/app/views/top/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ch, params[:search] placeholder="記事のリンクを入力...
+...                    ^~~~~~~~~~~):
+  
+app/views/top/index.html.erb:28: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-10-25 16:42:45 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/nuts/ToiDAS/app/views/top/index.html.erb:28: syntax error, unexpected ':', expecting ')'
+..._tag :search, params[:search] :placeholder => "記事のリ...
+...                              ^):
+  
+app/views/top/index.html.erb:28: syntax error, unexpected ':', expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-10-25 16:43:15 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 2476ms (Views: 2473.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-25 16:43:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=a" for 127.0.0.1 at 2018-10-25 16:43:23 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"a"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = 'a')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/urls_controller.rb:5
+  [1m[36mUrl Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "urls" WHERE "urls"."url" = ? LIMIT ?[0m  [["url", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:5
+  [1m[36mUrl Create (25.7ms)[0m  [1m[32mINSERT INTO "urls" ("url", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["url", "a"], ["created_at", "2018-10-25 07:43:33.151924"], ["updated_at", "2018-10-25 07:43:33.151924"]]
+  ↳ app/controllers/urls_controller.rb:5
+  [1m[35m (408.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/urls_controller.rb:5
+  Rendering urls/index.html.erb within layouts/application
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = 'a')[0m
+  ↳ app/views/urls/index.html.erb:1
+  Rendered urls/index.html.erb within layouts/application (66.4ms)
+Completed 500 Internal Server Error in 1434ms (ActiveRecord: 438.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `questions' for nil:NilClass):
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>
+    5:   <% @url.questions.each do |question| %>
+    6:     <div>
+    7:       <%= simple_format( question.question ) %>
+    8:       <%= question.question %>
+  
+app/views/urls/index.html.erb:5:in `block in _app_views_urls_index_html_erb___1868939883559830856_70164431256240'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb___1868939883559830856_70164431256240'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/urls?utf8=%E2%9C%93&search=a" for 127.0.0.1 at 2018-10-25 16:57:12 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"a"}
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = 'a')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 475ms (Views: 385.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-25 16:59:37 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `urls' for #<Url:0x00007fa0d9138400>
+Did you mean?  url
+               url=
+               url?):
+    1: <% @urls.each do |url| %>
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>(<%= url.urls.count %>)
+    5:     
+    6: <% end %>
+  
+app/views/urls/index.html.erb:4:in `block in _app_views_urls_index_html_erb___1868939883559830856_70164406704380'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb___1868939883559830856_70164406704380'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-25 17:00:39 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  Rendered urls/index.html.erb within layouts/application (229.9ms)
+Completed 500 Internal Server Error in 314ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Url::Question):
+    1: <% @urls.each do |url| %>
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>(<%= url.questions.count %>)
+    5:     
+    6: <% end %>
+  
+app/views/urls/index.html.erb:4:in `block in _app_views_urls_index_html_erb___1868939883559830856_70164303555120'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb___1868939883559830856_70164303555120'
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" ORDER BY "urls"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateQuestions (20181025083629)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181025083629_create_questions.rb:3
+  [1m[35m (37.3ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "yes" integer, "no" integer, "url_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_5e358cb74d"
+FOREIGN KEY ("url_id")
+  REFERENCES "urls" ("id")
+)[0m
+  ↳ db/migrate/20181025083629_create_questions.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_questions_on_url_id" ON "questions" ("url_id")[0m
+  ↳ db/migrate/20181025083629_create_questions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181025083629"]]
+  ↳ bin/rails:9
+  [1m[35m (27.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-25 17:43:18 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  Rendered urls/index.html.erb within layouts/application (198.9ms)
+Completed 200 OK in 327ms (Views: 283.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-25 17:45:40 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  Rendered urls/index.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `question' for nil:NilClass):
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>(<%= url.questions.count %>)
+    5:   <% @url.question.each do |question| %>
+    6:     <div>
+    7:       <%= simple_format( question.content ) %>
+    8:       <%= link_to '削除', [question.url, question],
+  
+app/views/urls/index.html.erb:5:in `block in _app_views_urls_index_html_erb___1868939883559830856_70164366866680'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb___1868939883559830856_70164366866680'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-25 17:46:09 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  Rendered urls/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `questions' for nil:NilClass):
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>(<%= url.questions.count %>)
+    5:   <% @url.questions.each do |question| %>
+    6:     <div>
+    7:       <%= simple_format( question.content ) %>
+    8:       <%= link_to '削除', [question.url, question],
+  
+app/views/urls/index.html.erb:5:in `block in _app_views_urls_index_html_erb___1868939883559830856_70164406552820'
+app/views/urls/index.html.erb:1:in `_app_views_urls_index_html_erb___1868939883559830856_70164406552820'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-25 17:46:43 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  Rendered urls/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 89ms (Views: 81.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-25 18:27:27 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 129ms (Views: 117.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-26 07:41:25 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nuts/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 2908ms (Views: 2807.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 07:41:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-26 07:45:19 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 243ms (Views: 200.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 07:45:19 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 07:45:35 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (460.9ms)
+Completed 200 OK in 815ms (Views: 658.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 07:46:26 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (1.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 349ms (Views: 334.0ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 07:46:42 +0900
+  
+ActionController::RoutingError (uninitialized constant QuestionsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 07:48:11 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 175ms (Views: 165.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 07:48:15 +0900
+  
+ActionController::RoutingError (uninitialized constant QuestionsController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 07:57:58 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hPwuHNwpGtcd42bDFO0muX3/ePAAL4fvGBoiYBa2XzKTE2kYFqa72J6l2tzZOf8V7yia6kXeJC8E9kfH6p+ydA==", "question"=>{"content"=>"aaa"}, "commit"=>"追加する", "url_id"=>"1"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 113ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 07:57:59 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1023ms (Views: 1018.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-26 07:58:35 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 83ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 07:58:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 07:58:39 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.7ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (952.0ms)
+Completed 200 OK in 6870ms (Views: 6091.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 07:58:53 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DuD4fgNWqGiPsoZfr0kQBUvzk7a/3U3Iy5sgCxeXXyUZD796ydkJZwz0OkBincmp2SRxrPos7gjXd0Ws676yYw==", "question"=>{"content"=>"aaaaaaaaaaa"}, "commit"=>"追加する", "url_id"=>"1"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 07:58:53 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-26 08:00:04 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 08:00:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-26 08:14:11 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 83ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 08:14:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:17:34 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 157ms (Views: 127.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:17:42 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 120ms (Views: 99.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-26 08:17:45 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"urls"}, missing required keys: [:id]):
+    23:     <div id="wrap">
+    24: 
+    25:         <div class="content">
+    26:             <%= form_tag url_path, :method => 'get' do %>
+    27:               <p>
+    28:                 <%= text_field_tag :search, params[:search], :placeholder => "記事のリンクを入力" %>
+    29:                 <%= submit_tag "Search", :name => nil %>
+  
+app/views/top/index.html.erb:26:in `_app_views_top_index_html_erb__199294498754448121_70049558326940'
+Started GET "/" for 127.0.0.1 at 2018-10-26 08:20:09 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 08:20:09 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:20:14 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+  Rendering urls/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:4
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/index.html.erb:5
+  Rendered urls/index.html.erb within layouts/application (841.4ms)
+Completed 200 OK in 5761ms (Views: 4999.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 08:20:24 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8UFav+hs4SnyD3h6r2xchZlh2tLX2Emzly+B/vPw+qrmrh27IuNAJnFJxGViuIUpC7Y4yJIp6nOLw+RZD9kX7A==", "question"=>{"content"=>"a"}, "commit"=>"追加する", "url_id"=>"1"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:20:24 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (1.8ms)[0m  [1m[34mSELECT "urls".* FROM "urls"[0m
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 4]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 4]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 5]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 5]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 6]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 6]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 7]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 7]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 8]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (1.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 8]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 9]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 9]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 10]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 10]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 11]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 11]]
+  ↳ app/views/urls/show.html.erb:5
+  Rendered urls/show.html.erb within layouts/application (149.8ms)
+Completed 200 OK in 247ms (Views: 208.1ms | ActiveRecord: 16.3ms)
+
+
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 08:20:36 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tXkA6z4J7y1wf268Q3wrwl4EK8kkIhkMOSmjInXBkrKilkfv9IZOIvM50qOOqPJuzNPJ02HTuswlxcaFieh/9A==", "question"=>{"content"=>"aaa"}, "commit"=>"追加する", "url_id"=>"1"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:20:36 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT "urls".* FROM "urls"[0m
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 4]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 4]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 5]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 5]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 6]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 6]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 7]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 7]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 8]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 8]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 9]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 9]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 10]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 10]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 11]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 11]]
+  ↳ app/views/urls/show.html.erb:5
+  Rendered urls/show.html.erb within layouts/application (206.9ms)
+Completed 200 OK in 296ms (Views: 277.2ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/url/1" for 127.0.0.1 at 2018-10-26 08:20:51 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/url/1"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:36:44 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT "urls".* FROM "urls"[0m
+  ↳ app/controllers/urls_controller.rb:13
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 4]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 4]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 5]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 5]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 6]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 6]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 7]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 7]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 8]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 8]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 9]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 9]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 10]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 10]]
+  ↳ app/views/urls/show.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 11]]
+  ↳ app/views/urls/show.html.erb:4
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 11]]
+  ↳ app/views/urls/show.html.erb:5
+  Rendered urls/show.html.erb within layouts/application (214.8ms)
+Completed 200 OK in 330ms (Views: 279.8ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-26 08:37:00 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 85ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 08:37:00 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:39:04 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"urls", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/urls_controller.rb:8:in `index'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:40:45 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.5ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:8:in `index'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:41:27 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.6ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/urls_controller.rb:8:in `index'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:41:38 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 21ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:41:38 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @urls.each do |url| %>
+    2:   <h1><%= url.url %></h1>
+    3: 
+    4:   <strong>質問</strong>(<%= url.questions.count %>)
+  
+app/views/urls/show.html.erb:1:in `_app_views_urls_show_html_erb__583951729030095123_70049558496820'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:44:26 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (2.0ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 13ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:44:26 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/nuts/ToiDAS/app/views/urls/show.html.erb:24: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/urls/show.html.erb:24: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:46:06 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 34ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:46:06 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: <h1><%= @url.url %></h1>
+    2: <strong>質問</strong>(<%= @url.questions.count %>)
+    3: <% @url.questions.each do |questions| %>
+    4:   <div>
+  
+app/views/urls/show.html.erb:1:in `_app_views_urls_show_html_erb__583951729030095123_70049555065940'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:47:03 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 13ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:47:03 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: <h1><%= @urls.url %></h1>
+    2: <strong>質問</strong>(<%= @urls.questions.count %>)
+    3: <% @urls.questions.each do |questions| %>
+    4:   <div>
+  
+app/views/urls/show.html.erb:1:in `_app_views_urls_show_html_erb__583951729030095123_70049558975760'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:52:03 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (2.5ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 13ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:52:03 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: <% @urls.each do |url| %>
+    3:   <h1><%= url.url %></h1>
+    4: 
+    5:   <strong>質問</strong>(<%= url.questions.count %>)
+  
+app/views/urls/show.html.erb:2:in `_app_views_urls_show_html_erb__583951729030095123_70049574581020'
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:52:26 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: <% @urls.each do |url| %>
+    3:   <h1><%= url.url %></h1>
+    4: 
+    5:   <strong>質問</strong>(<%= url.questions.count %>)
+  
+app/views/urls/show.html.erb:2:in `_app_views_urls_show_html_erb__583951729030095123_70368600881820'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 08:54:33 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:54:33 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: 
+    2: <h1><%= @url.url %></h1>
+    3: <strong>質問</strong>(<%= url.questions.count %>)
+    4: <% url.questions.each do |questions| %>
+    5:   <div>
+  
+app/views/urls/show.html.erb:2:in `_app_views_urls_show_html_erb__583951729030095123_70049549853340'
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 08:55:06 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering urls/show.html.erb within layouts/application
+  Rendered urls/show.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for nil:NilClass):
+    1: 
+    2: <h1><%= @urls.url %></h1>
+    3: <strong>質問</strong>(<%= url.questions.count %>)
+    4: <% url.questions.each do |questions| %>
+    5:   <div>
+  
+app/views/urls/show.html.erb:2:in `_app_views_urls_show_html_erb__583951729030095123_70049557416020'
+Started GET "/" for 127.0.0.1 at 2018-10-26 09:01:22 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 94ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/style.css" for 127.0.0.1 at 2018-10-26 09:01:23 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/urls?utf8=%E2%9C%93&search=0" for 127.0.0.1 at 2018-10-26 09:01:28 +0900
+Processing by UrlsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"0"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT "urls".* FROM "urls" WHERE (url = '0')[0m
+  ↳ app/controllers/urls_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 26ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 09:01:35 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (66.3ms)
+Completed 200 OK in 170ms (Views: 141.3ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 09:01:42 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gH0GHpfvT8AO17P8X4c0t9zdOCUn4eZHPKOmhMYhPtiXkkEaXWDuz42RD+OSU+0bTgraP2IQRYcgT8MjOgjTng==", "question"=>{"content"=>"aaaaaaaa"}, "commit"=>"追加する", "url_id"=>"1"}
+  [1m[36mUrl Load (1.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 25ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 09:01:43 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.9ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 138ms (Views: 119.4ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/urls/1/questions" for 127.0.0.1 at 2018-10-26 09:01:47 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5e2cVkTfYM1kpwrPXHIneDS5KaHqhGWoKj4ckWIIu2jyAttSjlDBwufhttCRpv7Upm7Lu691xmg20nk2niFWLg==", "question"=>{"content"=>"aaaaaa"}, "commit"=>"追加する", "url_id"=>"1"}
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+Redirected to http://0.0.0.0:3000/urls/1
+Completed 302 Found in 20ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2018-10-26 09:01:47 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 1]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 132ms (Views: 113.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:01:52 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 130ms (Views: 112.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/urls/3" for 127.0.0.1 at 2018-10-26 09:01:54 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 3]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 135ms (Views: 117.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/urls/34" for 127.0.0.1 at 2018-10-26 09:01:56 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Url with 'id'=34):
+  
+app/controllers/urls_controller.rb:12:in `show'
+Started POST "/urls/2/questions" for 127.0.0.1 at 2018-10-26 09:04:51 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"66vbpcwgdyJB3dlimjxd8xHfG5D59JynmCc8sejBo7v8RJyhBq/WLcKbZX1X6IRfgwj5irwFP2eEy1kWFOhO/Q==", "question"=>{"content"=>"aaaaaaa"}, "commit"=>"追加する", "url_id"=>"2"}
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 22ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:04:51 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 112ms (Views: 96.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/urls/2/questions" for 127.0.0.1 at 2018-10-26 09:08:20 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ECdAh3bGVBdb+JL9c7vAfiD0twsdL3VEBljoC7gH+pMHyAeDvEn1GNi+LuK+bxnSsiNVEVje1oQatI2sRC4X1Q==", "question"=>{"content"=>"aaa"}, "commit"=>"追加する", "url_id"=>"2"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[36mQuestion Create (20.3ms)[0m  [1m[32mINSERT INTO "questions" ("url_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["url_id", 2], ["created_at", "2018-10-26 00:08:20.279479"], ["updated_at", "2018-10-26 00:08:20.279479"]]
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[35m (27.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 112ms (ActiveRecord: 50.2ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:08:20 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (337.2ms)
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question' for #<#<Class:0x00007f6b581999c8>:0x00007f6b6006e0c8>
+Did you mean?  questions):
+    3: <strong>質問</strong>(<%= @url.questions.count %>)
+    4: <% @url.questions.each do |questions| %>
+    5:   <div>
+    6:     <%= simple_format( question.content ) %>
+    7:     <%= question.yes %>
+    8:     <%= question.no %>
+    9:     <%= link_to '削除', [question.url, question],
+  
+app/views/urls/show.html.erb:6:in `block in _app_views_urls_show_html_erb__583951729030095123_70049508151880'
+app/views/urls/show.html.erb:4:in `_app_views_urls_show_html_erb__583951729030095123_70049508151880'
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:09:03 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (2.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 128ms (Views: 119.0ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/urls/2/questions/1" for 127.0.0.1 at 2018-10-26 09:09:06 +0900
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sPDNbh08dUDqBsKEvgSVSk7tjT8VuerPqAGe88NphfKnH4pq17PUT2lAfptz0Ezm3DpvJVBISQ+07ftUP0BotA==", "url_id"=>"2", "id"=>"1"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:9
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."url_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["url_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[36mQuestion Destroy (4.3ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[35m (39.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 44.5ms)
+
+
+  
+NoMethodError (undefined method `post_path' for #<QuestionsController:0x00007f6b58058820>
+Did you mean?  root_path):
+  
+app/controllers/questions_controller.rb:12:in `destroy'
+Started DELETE "/urls/2/questions/1" for 127.0.0.1 at 2018-10-26 09:09:39 +0900
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sPDNbh08dUDqBsKEvgSVSk7tjT8VuerPqAGe88NphfKnH4pq17PUT2lAfptz0Ezm3DpvJVBISQ+07ftUP0BotA==", "url_id"=>"2", "id"=>"1"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:9
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."url_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["url_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:10
+Completed 404 Not Found in 71ms (ActiveRecord: 4.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question with 'id'=1 [WHERE "questions"."url_id" = ?]):
+  
+app/controllers/questions_controller.rb:10:in `destroy'
+Started DELETE "/urls/2/questions/1" for 127.0.0.1 at 2018-10-26 09:09:44 +0900
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sPDNbh08dUDqBsKEvgSVSk7tjT8VuerPqAGe88NphfKnH4pq17PUT2lAfptz0Ezm3DpvJVBISQ+07ftUP0BotA==", "url_id"=>"2", "id"=>"1"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:9
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."url_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["url_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:10
+Completed 404 Not Found in 68ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question with 'id'=1 [WHERE "questions"."url_id" = ?]):
+  
+app/controllers/questions_controller.rb:10:in `destroy'
+Started POST "/urls/2/questions" for 127.0.0.1 at 2018-10-26 09:10:41 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sPDNbh08dUDqBsKEvgSVSk7tjT8VuerPqAGe88NphfKnH4pq17PUT2lAfptz0Ezm3DpvJVBISQ+07ftUP0BotA==", "question"=>{"content"=>"aaaaaaaaaaa"}, "commit"=>"追加する", "url_id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[36mQuestion Create (6.3ms)[0m  [1m[32mINSERT INTO "questions" ("url_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["url_id", 2], ["created_at", "2018-10-26 00:10:41.227448"], ["updated_at", "2018-10-26 00:10:41.227448"]]
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[35m (31.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 81ms (ActiveRecord: 38.6ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:10:41 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 120ms (Views: 109.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/urls/2/questions" for 127.0.0.1 at 2018-10-26 09:10:45 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6G5DT79if9JvI8o/b+f0rspoTzjJQ/I+koRPjAvqAqn/gQRLde3e3exldiCiMy0CWL+tIoyyUf6OaCor98Pv7w==", "question"=>{"content"=>"aaaa"}, "commit"=>"追加する", "url_id"=>"2"}
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[36mQuestion Create (8.5ms)[0m  [1m[32mINSERT INTO "questions" ("url_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["url_id", 2], ["created_at", "2018-10-26 00:10:45.402627"], ["updated_at", "2018-10-26 00:10:45.402627"]]
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[35m (35.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 74ms (ActiveRecord: 44.5ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:10:45 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 116ms (Views: 106.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/urls/2/questions" for 127.0.0.1 at 2018-10-26 09:10:48 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TB2HgJ9wMghFy1u5pwY2Hta2uXz3Pj/MTB6+si2HFndb8sCEVf+TB8aN56Zq0u+yRGFbZrLPnAxQ8tsV0a77MQ==", "question"=>{"content"=>"aaa"}, "commit"=>"追加する", "url_id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+Unpermitted parameter: :content
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[36mQuestion Create (9.8ms)[0m  [1m[32mINSERT INTO "questions" ("url_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["url_id", 2], ["created_at", "2018-10-26 00:10:48.496835"], ["updated_at", "2018-10-26 00:10:48.496835"]]
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[35m (29.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 75ms (ActiveRecord: 40.3ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:10:48 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.2ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 126ms (Views: 113.5ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/urls/2/questions/2" for 127.0.0.1 at 2018-10-26 09:10:50 +0900
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TRmMiON5HhEIUFp9T29TTS9Hss+YXO4qVoFtnA5Ivkta9suMKfa/HosW5mKCu4rhvZBQ1d2tTepKbQg78mFTDQ==", "url_id"=>"2", "id"=>"2"}
+  [1m[36mUrl Load (1.1ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:9
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."url_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["url_id", 2], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[36mQuestion Destroy (4.9ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[35m (32.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 77ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:10:50 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 118ms (Views: 106.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:11:16 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 107ms (Views: 98.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:15:00 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 102ms (Views: 92.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:18:03 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 186ms (Views: 150.5ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/urls/2/questions" for 127.0.0.1 at 2018-10-26 09:18:07 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"98vxvLVfIbPYzJeVGZ+VgENchnuFsYRhle58CHMI8HLgJLa4f9CAvFuKK4rUS0ws0YtkYcBAJ6GJAhmvjyEdNA==", "question"=>{"content"=>"aaaaaa"}, "commit"=>"追加する", "url_id"=>"2"}
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[36mQuestion Create (9.6ms)[0m  [1m[32mINSERT INTO "questions" ("content", "url_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "aaaaaa"], ["url_id", 2], ["created_at", "2018-10-26 00:18:07.985152"], ["updated_at", "2018-10-26 00:18:07.985152"]]
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[35m (410.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 455ms (ActiveRecord: 421.1ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:18:08 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 100ms (Views: 92.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/urls/2/questions" for 127.0.0.1 at 2018-10-26 09:18:13 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F3MOwv4abzX1p7hxbOPFVI6WAOGnbAFvboYJ+zL1Dm4AnEnGNJXOOnbhBG6hNxz4HEHi++Kdoq9yamxcztzjKA==", "question"=>{"content"=>"aaaaaa"}, "commit"=>"追加する", "url_id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[36mQuestion Create (10.6ms)[0m  [1m[32mINSERT INTO "questions" ("content", "url_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "aaaaaa"], ["url_id", 2], ["created_at", "2018-10-26 00:18:13.176959"], ["updated_at", "2018-10-26 00:18:13.176959"]]
+  ↳ app/controllers/questions_controller.rb:4
+  [1m[35m (32.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:4
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 68ms (ActiveRecord: 43.3ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:18:13 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 110ms (Views: 103.3ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/urls/2/questions/4" for 127.0.0.1 at 2018-10-26 09:18:15 +0900
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"om8Dgoz+vDOEpLNASxciX4tisSmb0sC5JJAPFtn4Npy1gESGRnEdPAfiD1+Gw/vzGbVTM94jY3k4fGqxJdHb2g==", "url_id"=>"2", "id"=>"4"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:9
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."url_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["url_id", 2], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[36mQuestion Destroy (3.5ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[35m (27.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 56ms (ActiveRecord: 31.1ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:18:15 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 130ms (Views: 109.1ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/urls/2/questions/3" for 127.0.0.1 at 2018-10-26 09:18:16 +0900
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1W2tFrjIbthKZb3jZUNeZpJIYZtnATtoRggkI6fvvvjCguoSckfP18kjAfyol4fKAJ+DgSLwmKha5EGEW8ZTvg==", "url_id"=>"2", "id"=>"3"}
+  [1m[36mUrl Load (0.3ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:9
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."url_id" = ? AND "questions"."id" = ? LIMIT ?[0m  [["url_id", 2], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[36mQuestion Destroy (5.4ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/questions_controller.rb:11
+  [1m[35m (31.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:11
+Redirected to http://0.0.0.0:3000/urls/2
+Completed 302 Found in 77ms (ActiveRecord: 37.5ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2018-10-26 09:18:16 +0900
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/urls_controller.rb:12
+  Rendering urls/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:3
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."url_id" = ?[0m  [["url_id", 2]]
+  ↳ app/views/urls/show.html.erb:4
+  Rendered urls/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 116ms (Views: 104.9ms | ActiveRecord: 1.9ms)
+
+

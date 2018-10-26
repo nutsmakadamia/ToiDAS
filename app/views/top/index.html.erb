@@ -25,7 +25,7 @@
         <div class="content">
             <%= form_tag urls_path, :method => 'get' do %>
               <p>
-                <%= text_field_tag :search, params[:search] %>
+                <%= text_field_tag :search, params[:search], :placeholder => "記事のリンクを入力" %>
                 <%= submit_tag "Search", :name => nil %>
               </p>
             <% end %>
