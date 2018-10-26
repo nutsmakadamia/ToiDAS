@@ -12,20 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2018_10_25_083629) do
 
-  create_table "qestions", force: :cascade do |t|
-    t.string "qestion"
-    t.integer "yes"
-    t.integer "no"
-    t.integer "url_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["url_id"], name: "index_qestions_on_url_id"
-  end
-
   create_table "questions", force: :cascade do |t|
     t.string "content"
-    t.integer "yes"
-    t.integer "no"
+    t.integer "yes", default: 0
+    t.integer "no", default: 0
     t.integer "url_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
