@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  'yes': 1
+  'no': 1
+  url: one
+
+two:
+  content: MyString
+  'yes': 1
+  'no': 1
+  url: two
