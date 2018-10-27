@@ -11,12 +11,13 @@
      /* font-family: 'Open Sans', sans-serif; */
  }
 
- body {
-     background:linear-gradient(90deg, #FF7177 0%, #FF7177 55%, #5CA9C5 55%, #5CA9C5 100%);
-     color: white;
+ .top {
+    background:linear-gradient(90deg, #FF7177 0%, #FF7177 55%, #5CA9C5 55%, #5CA9C5 100%);
+    color: white;
+    height: 1000px;
  }
 
- img {
+ .top img {
      margin: 5px auto 20px;
      display: block;
      width: 600px;

@@ -1,24 +1,30 @@
-
-<h1><%= @url.url %></h1>
-<strong>質問</strong>(<%= @url.questions.count %>)
-<% @url.questions.each do |question| %>
-  <div>
-    <%= question.content %>
-    <%= link_to "YES:", url_question_increment_yes_path(@url.id, question.id) %>
-    <%= question.yes %>
-    <%= link_to "NO:",  url_question_increment_no_path(@url.id, question.id) %>
-    <%= question.no %>
-    合計:<%= question.yes + question.no %>
-    <%= link_to '削除', [question.url, question],
-                :confirm => 'よろしいですか？',
-                :method => :delete %>
+<div class="show_page">
+  <div class="head">
+    <div class="logo">
+        <%= link_to image_tag('/assets/toidas_title.png'), root_path %>
+    </div>
   </div>
-<% end %>
+  <h1><%= @url.url %></h1>
+  <strong>質問</strong>(<%= @url.questions.count %>)
+  <% @url.questions.each do |question| %>
+    <div>
+      <%= question.content %>
+      <%= link_to "YES:", url_question_increment_yes_path(@url.id, question.id) %>
+      <%= question.yes %>
+      <%= link_to "NO:",  url_question_increment_no_path(@url.id, question.id) %>
+      <%= question.no %>
+      合計:<%= question.yes + question.no %>
+      <%= link_to '削除', [question.url, question],
+                  :confirm => 'よろしいですか？',
+                  :method => :delete %>
+    </div>
+  <% end %>
 
-<strong>質問を追加</strong>
-<%= form_for([@url, @url.questions.build]) do |f| %>
-    <div>
-      <%= f.text_area :content, placeholder: '質問を入力してください' %>
-      <%= f.submit '追加する', :class=>'btn' %>
-    <div>
-<% end %>
+  <strong>質問を追加</strong>
+  <%= form_for([@url, @url.questions.build]) do |f| %>
+      <div>
+        <%= f.text_area :content, placeholder: '質問を入力してください' %>
+        <%= f.submit '追加する', :class=>'btn' %>
+      <div>
+  <% end %>
+</div>

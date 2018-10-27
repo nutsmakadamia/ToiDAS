@@ -1,3 +1,24 @@
 // Place all the styles related to the urls controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    background-color: white; 
+    color: gray;
+ }
+
+ .head {
+    background:linear-gradient(90deg, #FF7177 0%, #FF7177 25%, #5CA9C5 25%, #5CA9C5 100%);
+    color: white;
+    height: 100px;
+
+    .logo {
+        width: 420px;
+        margin: 10px 200px;
+        img {
+            height: 80px;
+            display: block;
+        }
+    }
+ }
