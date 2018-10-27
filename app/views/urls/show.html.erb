@@ -19,6 +19,6 @@
 <%= form_for([@url, @url.questions.build]) do |f| %>
     <div>
       <%= f.text_area :content, placeholder: '質問を入力してください' %>
-      <%= f.submit '追加する' %>
+      <%= f.submit '追加する', :class=>'btn' %>
     <div>
 <% end %>

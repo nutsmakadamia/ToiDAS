@@ -26,7 +26,7 @@
             <%= form_tag urls_path, :method => 'get' do %>
               <p>
                 <%= text_field_tag :search, params[:search], :placeholder => "記事のリンクを入力" %>
-                <%= submit_tag "Search", :name => nil %>
+                <%= submit_tag "Search", class: 'btn' %>
               </p>
             <% end %>
             <!--<input type="text" placeholder="記事のリンクを入力">-->
