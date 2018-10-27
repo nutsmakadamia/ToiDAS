@@ -37,3 +37,37 @@ body {
         }
     }
  }
+
+ .show_page > .content {
+     margin: 20px 50px;
+     width: 70%;
+
+     a {
+         color: #FF7177;
+     }
+
+     h1 {
+         padding-bottom: 30px;
+     }
+ }
+
+ .question {
+     padding: 10px;
+     margin: 2em 1em;
+     background: white;
+     border: solid 1px whitesmoke;
+     border-radius: 5px;
+     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.22);
+     height: 100px;
+     width: 500px;
+ }
+
+ .addition {
+     padding: 10px;
+
+     .form {
+         height: 100px;
+         width: 55%;
+         font-size: 14px;
+     }
+ }
