@@ -3,6 +3,14 @@
     <div class="logo">
         <%= link_to image_tag('/assets/toidas_title.png'), root_path %>
     </div>
+    <div class="search_bar">
+      <%= form_tag urls_path, :method => 'get' do %>
+        <p>
+          <%= text_field_tag :search, params[:search], :placeholder => "記事のリンクを入力", class: 'space' %>
+          <%= submit_tag "Search", class: 'btn' %>
+        </p>
+      <% end %>
+    </div>
   </div>
   <h1><%= @url.url %></h1>
   <strong>質問</strong>(<%= @url.questions.count %>)

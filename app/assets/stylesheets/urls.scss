@@ -14,11 +14,26 @@ body {
     height: 100px;
 
     .logo {
-        width: 420px;
-        margin: 10px 200px;
+        width: 350px;
+        margin: 10px 150px;
+        float: left;
         img {
             height: 80px;
             display: block;
+        }
+    }
+
+    .search_bar {
+        float: right;
+
+        .space {
+            float: left;
+            margin: 30px 5px;
+        }
+
+        .btn {
+            float: right;
+            margin: 25px  25px 25px 5px;
         }
     }
  }
