@@ -1,24 +1,43 @@
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 
-<h1><%= @url.url %></h1>
-<strong>質問</strong>(<%= @url.questions.count %>)
-<% @url.questions.each do |question| %>
-  <div>
-    <%= question.content %>
-    <%= link_to "YES:", url_question_increment_yes_path(@url.id, question.id) %>
-    <%= question.yes %>
-    <%= link_to "NO:",  url_question_increment_no_path(@url.id, question.id) %>
-    <%= question.no %>
-    合計:<%= question.yes + question.no %>
-    <%= link_to '削除', [question.url, question],
-                :confirm => 'よろしいですか？',
-                :method => :delete %>
+
+<div class="show_page">
+  <div class="head">
+    <div class="logo">
+        <%= link_to image_tag('/assets/toidas_title.png'), root_path %>
+    </div>
+    <div class="search_bar">
+      <%= form_tag urls_path, :method => 'get' do %>
+        <p>
+          <%= text_field_tag :search, params[:search], :placeholder => "記事のリンクを入力", class: 'space' %>
+          <%= submit_tag "Search", class: 'btn' %>
+        </p>
+      <% end %>
+    </div>
   </div>
-<% end %>
+  <div class="content">
+    <h1>対象ページ: <%= link_to @url.url, @url.url, :target=>["_blank"]%></h1>
+    <strong>質問</strong>(<%= @url.questions.count %>)
+    <% @url.questions.each do |question| %>
+      <div class="question">
+        <%= question.content %>
+        <%= link_to "YES:", url_question_increment_yes_path(@url.id, question.id) %>
+        <%= question.yes %>
+        <%= link_to "NO:",  url_question_increment_no_path(@url.id, question.id) %>
+        <%= question.no %>
+        合計:<%= question.yes + question.no %>
+        <%= link_to '削除', [question.url, question],
+                    :confirm => 'よろしいですか？',
+                    :method => :delete %>
+      </div>
+    <% end %>
 
-<strong>質問を追加</strong>
-<%= form_for([@url, @url.questions.build]) do |f| %>
-    <div>
-      <%= f.text_area :content, placeholder: '質問を入力してください' %>
-      <%= f.submit '追加する' %>
-    <div>
-<% end %>
+    <strong>質問を追加</strong>
+    <%= form_for([@url, @url.questions.build]) do |f| %>
+        <div class="addition">
+          <%= f.text_area :content, placeholder: '質問を入力してください', :class=>'form' %>
+          <%= f.submit '追加する', :class=>'btn' %>
+        <div>
+    <% end %>
+  </div>
+</div>

@@ -3,14 +3,18 @@
 <!--headの要素はインテンドしない-->
 <head>
 <meta charset="UTF-8">
-<title>サンプルページ</title>
-<link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+<title>ToiDas</title>
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
 <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class='<%= "#{controller.controller_name}" %>'>
     <header>
+        
+    </header>
+
+    <div id="top">
         <div class="about">
             <a href="index.html"><p>about ToiDas</p></a>
         </div>
@@ -18,15 +22,11 @@
             <p>かんたん記事評価アプリ</p>
             <%= link_to image_tag('/assets/toidas_title.png'), root_path %>
         </div>
-    </header>
-
-    <div id="wrap">
-
         <div class="content">
             <%= form_tag urls_path, :method => 'get' do %>
               <p>
                 <%= text_field_tag :search, params[:search], :placeholder => "記事のリンクを入力" %>
-                <%= submit_tag "Search", :name => nil %>
+                <%= submit_tag "Search", class: 'btn' %>
               </p>
             <% end %>
             <!--<input type="text" placeholder="記事のリンクを入力">-->
